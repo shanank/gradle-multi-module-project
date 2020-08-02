@@ -1,0 +1,12 @@
+
+
+group 'com.training.com.training.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0'
+}

@@ -1,0 +1,33 @@
+
+group = 'com.training.com.training.gradle'
+version = '0.0.1-SNAPSHOT'
+
+subprojects {
+
+	ext {
+		JUNIT_VERSION = '4.12'
+	}
+
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+
+	apply plugin: 'java'
+	apply plugin: 'idea'
+
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+
+
+	dependencies {
+
+		testCompile group: 'junit', name: 'junit', version: "${JUNIT_VERSION}"
+
+	}
+
+	test {
+		useJUnitPlatform()
+	}
+
+}

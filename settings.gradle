@@ -1,0 +1,6 @@
+
+
+rootProject.name = 'com.training.gradle-multi-module-project'
+
+include 'common-module'
+include 'core-module'
